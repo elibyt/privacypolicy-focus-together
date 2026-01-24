@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Focus Together</title>
+  <style>
+    :root {
+      --primary: #6366f1;
+      --text: #1f2937;
+      --text-secondary: #6b7280;
+      --background: #ffffff;
+      --surface: #f9fafb;
+      --border: #e5e7eb;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--background);
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+    
+    .subtitle {
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    
+    h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+    
+    p {
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    
+    ul, ol {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+    
+    li {
+      margin-bottom: 8px;
+    }
+    
+    .highlight-box {
+      background: var(--surface);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .warning-box {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .info-box {
+      background: #dbeafe;
+      border-left: 4px solid #3b82f6;
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    
+    th, td {
+      border: 1px solid var(--border);
+      padding: 12px;
+      text-align: left;
+    }
+    
+    th {
+      background: var(--surface);
+      font-weight: 600;
+    }
+    
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    .toc {
+      background: var(--surface);
+      padding: 24px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+    
+    .toc h3 {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    
+    .toc ol {
+      margin-bottom: 0;
+    }
+    
+    .toc a {
+      color: var(--text);
+    }
+    
+    .footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+    
+    .data-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+    
+    .badge-required {
+      background: #fee2e2;
+      color: #dc2626;
+    }
+    
+    .badge-optional {
+      background: #d1fae5;
+      color: #059669;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #818cf8;
+        --text: #f9fafb;
+        --text-secondary: #9ca3af;
+        --background: #111827;
+        --surface: #1f2937;
+        --border: #374151;
+      }
+      
+      .warning-box {
+        background: #78350f;
+        color: #fef3c7;
+      }
+      
+      .info-box {
+        background: #1e3a5f;
+        color: #dbeafe;
+      }
+      
+      .badge-required {
+        background: #7f1d1d;
+        color: #fecaca;
+      }
+      
+      .badge-optional {
+        background: #064e3b;
+        color: #a7f3d0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Focus Together App — Last Updated: January 24, 2026</p>
+    
+    <div class="highlight-box">
+      <strong>Summary:</strong> Focus Together collects data necessary to provide our focus timer and social features. We use Firebase (Google) for authentication and data storage, and RevenueCat for subscription management. We do not sell your personal data. You can delete your account and data at any time.
+    </div>
+    
+    <div class="toc">
+      <h3>Table of Contents</h3>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#controller">Data Controller</a></li>
+        <li><a href="#data-collected">Data We Collect</a></li>
+        <li><a href="#how-collected">How We Collect Data</a></li>
+        <li><a href="#legal-basis">Legal Basis for Processing</a></li>
+        <li><a href="#how-used">How We Use Your Data</a></li>
+        <li><a href="#data-sharing">Data Sharing and Third Parties</a></li>
+        <li><a href="#international">International Data Transfers</a></li>
+        <li><a href="#retention">Data Retention</a></li>
+        <li><a href="#your-rights">Your Rights</a></li>
+        <li><a href="#security">Data Security</a></li>
+        <li><a href="#children">Children's Privacy</a></li>
+        <li><a href="#cookies">Cookies and Tracking</a></li>
+        <li><a href="#changes">Changes to This Policy</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ol>
+    </div>
+
+    <h2 id="introduction">1. Introduction</h2>
+    
+    <p>Welcome to Focus Together ("App," "Service," "we," "us," or "our"). We are committed to protecting your privacy and ensuring you understand how your personal data is collected, used, and protected.</p>
+    
+    <p>This Privacy Policy explains:</p>
+    <ul>
+      <li>What information we collect about you</li>
+      <li>How we collect and use that information</li>
+      <li>Who we share your information with</li>
+      <li>Your rights regarding your personal data</li>
+      <li>How we protect your information</li>
+    </ul>
+    
+    <p>By using Focus Together, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree with this policy, please do not use our Service.</p>
+    
+    <p>This Privacy Policy should be read in conjunction with our <a href="/terms.html">Terms and Conditions</a>.</p>
+
+    <h2 id="controller">2. Data Controller</h2>
+    
+    <h3>2.1 Controller Information</h3>
+    <p>The data controller responsible for your personal data is:</p>
+    
+    <div class="highlight-box">
+      <strong>Focus Together</strong><br>
+      Baden-Württemberg, Germany<br><br>
+      <strong>Contact Email:</strong> <a href="mailto:elibyteofficial@gmail.com">elibyteofficial@gmail.com</a><br>
+      <strong>Website:</strong> <a href="https://focustogether.app">https://focustogether.app</a>
+    </div>
+    
+    <h3>2.2 Representative</h3>
+    <p>For all data protection matters, you may contact us at the email address provided above. Please include "Data Protection" or "Privacy" in your subject line to ensure prompt handling of your request.</p>
+
+    <h2 id="data-collected">3. Data We Collect</h2>
+    
+    <p>We collect different types of data depending on how you use our Service and which features you access.</p>
+    
+    <h3>3.1 Account Information</h3>
+    <p>When you create an account, we collect:</p>
+    
+    <table>
+      <tr>
+        <th>Data Type</th>
+        <th>Description</th>
+        <th>Required</th>
+      </tr>
+      <tr>
+        <td>User ID</td>
+        <td>Unique identifier generated by Firebase Authentication</td>
+        <td><span class="data-badge badge-required">Required</span></td>
+      </tr>
+      <tr>
+        <td>Email Address</td>
+        <td>Your email from Google or Apple Sign-In (may be hidden with Apple's Hide My Email)</td>
+        <td><span class="data-badge badge-optional">Optional</span></td>
+      </tr>
+      <tr>
+        <td>Display Name</td>
+        <td>Your name as provided by Google/Apple, or auto-generated for guests</td>
+        <td><span class="data-badge badge-optional">Optional</span></td>
+      </tr>
+      <tr>
+        <td>Profile Photo URL</td>
+        <td>Link to your profile picture from Google/Apple</td>
+        <td><span class="data-badge badge-optional">Optional</span></td>
+      </tr>
+      <tr>
+        <td>Account Type</td>
+        <td>Whether you signed in with Google, Apple, or as a guest</td>
+        <td><span class="data-badge badge-required">Required</span></td>
+      </tr>
+    </table>
+    
+    <div class="info-box">
+      <strong>Guest Accounts:</strong> If you use the App without signing in, we create a temporary anonymous account. This account stores minimal data and may be lost if you uninstall the App or clear app data.
+    </div>
+    
+    <h3>3.2 Usage and Activity Data</h3>
+    <p>To provide our core features, we collect:</p>
+    
+    <table>
+      <tr>
+        <th>Data Type</th>
+        <th>Description</th>
+        <th>Purpose</th>
+      </tr>
+      <tr>
+        <td>Focus Sessions</td>
+        <td>Start time, end time, duration, completion status, session type</td>
+        <td>Statistics, gamification</td>
+      </tr>
+      <tr>
+        <td>Daily Focus Logs</td>
+        <td>Total minutes focused per day, sessions completed, goal achievement status</td>
+        <td>Streak tracking, statistics</td>
+      </tr>
+      <tr>
+        <td>Total Statistics</td>
+        <td>Lifetime focus minutes, completed sessions, current/longest streak</td>
+        <td>Profile statistics, achievements</td>
+      </tr>
+      <tr>
+        <td>Gamification Data</td>
+        <td>XP earned, level, achievements unlocked, challenges completed</td>
+        <td>Gamification features</td>
+      </tr>
+      <tr>
+        <td>Streak Freezes</td>
+        <td>Number of streak protection items owned</td>
+        <td>Streak protection feature</td>
+      </tr>
+    </table>
+    
+    <h3>3.3 Settings and Preferences</h3>
+    <p>We store your customization choices:</p>
+    
+    <table>
+      <tr>
+        <th>Setting</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Timer Settings</td>
+        <td>Focus duration, short break, long break, sessions until long break</td>
+      </tr>
+      <tr>
+        <td>Daily Goal</td>
+        <td>Your daily focus time target in minutes</td>
+      </tr>
+      <tr>
+        <td>Notification Preferences</td>
+        <td>Whether notifications are enabled, reminder times</td>
+      </tr>
+      <tr>
+        <td>Sound Preferences</td>
+        <td>Sound enabled/disabled, selected ambient sound</td>
+      </tr>
+      <tr>
+        <td>Haptic Preferences</td>
+        <td>Vibration feedback enabled/disabled</td>
+      </tr>
+      <tr>
+        <td>Theme Selection</td>
+        <td>Dark mode preference, selected color theme</td>
+      </tr>
+    </table>
+    
+    <h3>3.4 Social and Room Data</h3>
+    <p>When you use Focus Rooms and social features:</p>
+    
+    <table>
+      <tr>
+        <th>Data Type</th>
+        <th>Description</th>
+        <th>Visibility</th>
+      </tr>
+      <tr>
+        <td>Room Participation</td>
+        <td>Which rooms you join, join/leave times</td>
+        <td>Visible to room participants</td>
+      </tr>
+      <tr>
+        <td>Presence Status</td>
+        <td>Your current status (focusing, on break, idle)</td>
+        <td>Visible to room participants</td>
+      </tr>
+      <tr>
+        <td>Chat Messages</td>
+        <td>Messages you send in Focus Rooms</td>
+        <td>Visible to room participants</td>
+      </tr>
+      <tr>
+        <td>Encouragements</td>
+        <td>Motivational messages sent to other users</td>
+        <td>Visible to recipients in room</td>
+      </tr>
+      <tr>
+        <td>Room Creation Data</td>
+        <td>Room name, description, tags (if you create rooms)</td>
+        <td>Visible to all users browsing rooms</td>
+      </tr>
+    </table>
+    
+    <div class="warning-box">
+      <strong>Important:</strong> Chat messages and encouragements are visible to other users in the same Focus Room. Do not share sensitive personal information in chat messages.
+    </div>
+    
+    <h3>3.5 Technical and Device Data</h3>
+    <p>We automatically collect certain technical information:</p>
+    
+    <ul>
+      <li><strong>Device Information:</strong> Device type, operating system version, app version</li>
+      <li><strong>Timestamps:</strong> Account creation date, last active date</li>
+      <li><strong>Error Reports:</strong> Crash logs and error information (anonymized)</li>
+      <li><strong>Performance Data:</strong> App performance metrics (anonymized)</li>
+    </ul>
+    
+    <h3>3.6 Payment and Subscription Data</h3>
+    
+    <div class="highlight-box">
+      <strong>We do not collect or store payment card information.</strong> All payment processing is handled by Apple (App Store) or Google (Play Store). We only receive:
+      <ul style="margin-top: 10px; margin-bottom: 0;">
+        <li>Subscription status (active/inactive/expired)</li>
+        <li>Subscription type (weekly/yearly)</li>
+        <li>Purchase date and expiration date</li>
+        <li>Transaction identifiers (for support purposes)</li>
+      </ul>
+    </div>
+
+    <h2 id="how-collected">4. How We Collect Data</h2>
+    
+    <h3>4.1 Data You Provide Directly</h3>
+    <p>We collect data when you:</p>
+    <ul>
+      <li>Create an account or sign in</li>
+      <li>Update your profile or settings</li>
+      <li>Send messages in Focus Rooms</li>
+      <li>Create Focus Rooms</li>
+      <li>Contact us for support</li>
+    </ul>
+    
+    <h3>4.2 Data Collected Automatically</h3>
+    <p>We automatically collect data when you:</p>
+    <ul>
+      <li>Start and complete focus sessions</li>
+      <li>Join or leave Focus Rooms</li>
+      <li>Earn XP and achievements</li>
+      <li>Use the App (for analytics purposes)</li>
+    </ul>
+    
+    <h3>4.3 Data from Third Parties</h3>
+    <p>We receive data from:</p>
+    <ul>
+      <li><strong>Google Sign-In:</strong> Your Google account name, email, and profile photo</li>
+      <li><strong>Apple Sign-In:</strong> Your Apple ID name, email (or relay email), and profile photo</li>
+      <li><strong>RevenueCat:</strong> Subscription status and purchase information</li>
+    </ul>
+
+    <h2 id="legal-basis">5. Legal Basis for Processing</h2>
+    
+    <p>Under the General Data Protection Regulation (GDPR), we process your personal data based on the following legal grounds:</p>
+    
+    <table>
+      <tr>
+        <th>Legal Basis</th>
+        <th>Processing Activities</th>
+      </tr>
+      <tr>
+        <td><strong>Contract Performance</strong><br>(Art. 6(1)(b) GDPR)</td>
+        <td>
+          <ul>
+            <li>Creating and managing your account</li>
+            <li>Providing timer and Focus Room features</li>
+            <li>Processing subscriptions</li>
+            <li>Providing customer support</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Legitimate Interests</strong><br>(Art. 6(1)(f) GDPR)</td>
+        <td>
+          <ul>
+            <li>Improving the App and developing new features</li>
+            <li>Analyzing usage patterns (anonymized)</li>
+            <li>Preventing fraud and abuse</li>
+            <li>Ensuring service security</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Consent</strong><br>(Art. 6(1)(a) GDPR)</td>
+        <td>
+          <ul>
+            <li>Sending optional push notifications</li>
+            <li>Processing optional profile information</li>
+            <li>Analytics (where consent is required)</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Legal Obligation</strong><br>(Art. 6(1)(c) GDPR)</td>
+        <td>
+          <ul>
+            <li>Retaining records as required by law</li>
+            <li>Responding to legal requests</li>
+            <li>Tax and accounting requirements</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <h2 id="how-used">6. How We Use Your Data</h2>
+    
+    <h3>6.1 Providing Core Services</h3>
+    <ul>
+      <li>Operating the focus timer and tracking your sessions</li>
+      <li>Calculating and displaying your statistics and streaks</li>
+      <li>Operating Focus Rooms and enabling social features</li>
+      <li>Managing your account and preferences</li>
+      <li>Processing and managing subscriptions</li>
+    </ul>
+    
+    <h3>6.2 Gamification Features</h3>
+    <ul>
+      <li>Calculating XP earned from focus sessions</li>
+      <li>Tracking level progression</li>
+      <li>Unlocking and displaying achievements</li>
+      <li>Managing daily and weekly challenges</li>
+      <li>Maintaining streak counts and streak freezes</li>
+    </ul>
+    
+    <h3>6.3 Communication</h3>
+    <ul>
+      <li>Sending timer completion notifications</li>
+      <li>Sending daily focus reminders (if enabled)</li>
+      <li>Alerting you when your streak is at risk</li>
+      <li>Responding to support requests</li>
+      <li>Notifying you of important service updates</li>
+    </ul>
+    
+    <h3>6.4 Service Improvement</h3>
+    <ul>
+      <li>Analyzing usage patterns to improve features</li>
+      <li>Identifying and fixing bugs and errors</li>
+      <li>Developing new features based on user behavior</li>
+      <li>Optimizing app performance</li>
+    </ul>
+    
+    <h3>6.5 Safety and Security</h3>
+    <ul>
+      <li>Detecting and preventing fraudulent activity</li>
+      <li>Enforcing our Terms and Conditions</li>
+      <li>Moderating content in Focus Rooms</li>
+      <li>Protecting users from harmful content</li>
+    </ul>
+
+    <h2 id="data-sharing">7. Data Sharing and Third Parties</h2>
+    
+    <h3>7.1 We Do Not Sell Your Data</h3>
+    <div class="highlight-box">
+      <strong>Focus Together does not sell, rent, or trade your personal information to third parties for marketing purposes.</strong>
+    </div>
+    
+    <h3>7.2 Service Providers</h3>
+    <p>We share data with the following third-party service providers who help us operate the App:</p>
+    
+    <table>
+      <tr>
+        <th>Provider</th>
+        <th>Service</th>
+        <th>Data Shared</th>
+        <th>Privacy Policy</th>
+      </tr>
+      <tr>
+        <td><strong>Google Firebase</strong></td>
+        <td>Authentication, Database, Analytics</td>
+        <td>Account data, usage data, analytics</td>
+        <td><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a></td>
+      </tr>
+      <tr>
+        <td><strong>RevenueCat</strong></td>
+        <td>Subscription Management</td>
+        <td>User ID, subscription status</td>
+        <td><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy</a></td>
+      </tr>
+      <tr>
+        <td><strong>Apple Inc.</strong></td>
+        <td>iOS Distribution, Payments, Sign-In</td>
+        <td>Account data (Sign-In), payment data</td>
+        <td><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy</a></td>
+      </tr>
+      <tr>
+        <td><strong>Google LLC</strong></td>
+        <td>Android Distribution, Payments, Sign-In</td>
+        <td>Account data (Sign-In), payment data</td>
+        <td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy</a></td>
+      </tr>
+    </table>
+    
+    <h3>7.3 Other Users</h3>
+    <p>Certain information is visible to other users:</p>
+    <ul>
+      <li><strong>In Focus Rooms:</strong> Your display name, profile photo, focus status, and chat messages are visible to other room participants</li>
+      <li><strong>Room Listings:</strong> If you create a room, its name, description, and participant count are visible to all users</li>
+      <li><strong>Leaderboards:</strong> If implemented, your display name and statistics may appear on leaderboards</li>
+    </ul>
+    
+    <h3>7.4 Legal Requirements</h3>
+    <p>We may disclose your information if required to do so by law or in response to valid requests by public authorities, including:</p>
+    <ul>
+      <li>To comply with a legal obligation</li>
+      <li>To protect and defend our rights or property</li>
+      <li>To prevent or investigate possible wrongdoing</li>
+      <li>To protect the personal safety of users or the public</li>
+      <li>To protect against legal liability</li>
+    </ul>
+    
+    <h3>7.5 Business Transfers</h3>
+    <p>If Focus Together is involved in a merger, acquisition, or sale of assets, your personal data may be transferred. We will provide notice before your personal data is transferred and becomes subject to a different privacy policy.</p>
+
+    <h2 id="international">8. International Data Transfers</h2>
+    
+    <h3>8.1 Data Location</h3>
+    <p>Focus Together is operated from Germany. However, our service providers (particularly Google Firebase) may process data in various locations worldwide, including the United States.</p>
+    
+    <h3>8.2 Transfer Safeguards</h3>
+    <p>When we transfer personal data outside the European Economic Area (EEA), we ensure appropriate safeguards are in place:</p>
+    <ul>
+      <li><strong>Standard Contractual Clauses (SCCs):</strong> Google and other providers use EU-approved standard contractual clauses</li>
+      <li><strong>Adequacy Decisions:</strong> Transfers to countries with adequate data protection (as determined by the EU Commission)</li>
+      <li><strong>EU-US Data Privacy Framework:</strong> For US-based providers certified under this framework</li>
+    </ul>
+    
+    <h3>8.3 Google Firebase</h3>
+    <p>Firebase data may be processed in Google's data centers worldwide. Google complies with GDPR through Standard Contractual Clauses and other mechanisms. For more information, see <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase's Privacy and Security documentation</a>.</p>
+
+    <h2 id="retention">9. Data Retention</h2>
+    
+    <h3>9.1 Retention Periods</h3>
+    
+    <table>
+      <tr>
+        <th>Data Type</th>
+        <th>Retention Period</th>
+        <th>Reason</th>
+      </tr>
+      <tr>
+        <td>Account Information</td>
+        <td>Until account deletion</td>
+        <td>Service provision</td>
+      </tr>
+      <tr>
+        <td>Focus Session History</td>
+        <td>Until account deletion</td>
+        <td>Statistics and gamification</td>
+      </tr>
+      <tr>
+        <td>Daily Logs</td>
+        <td>Until account deletion</td>
+        <td>Streak tracking, statistics</td>
+      </tr>
+      <tr>
+        <td>Chat Messages</td>
+        <td>Deleted when room is deleted (10 min after empty) or limited to last 100 messages per room</td>
+        <td>Real-time communication</td>
+      </tr>
+      <tr>
+        <td>Room Participation Data</td>
+        <td>Deleted when you leave the room or room is deleted</td>
+        <td>Real-time presence</td>
+      </tr>
+      <tr>
+        <td>Analytics Data</td>
+        <td>Aggregated/anonymized after 14 months</td>
+        <td>Service improvement</td>
+      </tr>
+      <tr>
+        <td>Support Communications</td>
+        <td>3 years</td>
+        <td>Customer service, legal compliance</td>
+      </tr>
+    </table>
+    
+    <h3>9.2 Account Deletion</h3>
+    <p>When you delete your account:</p>
+    <ul>
+      <li>Your profile data is permanently deleted</li>
+      <li>Your focus session history is deleted</li>
+      <li>Your daily logs and statistics are deleted</li>
+      <li>Your authentication credentials are revoked</li>
+      <li>Your room participation data is removed</li>
+    </ul>
+    
+    <p>Some data may be retained:</p>
+    <ul>
+      <li>Anonymized analytics data (cannot be linked to you)</li>
+      <li>Data required for legal compliance</li>
+      <li>Backup data (deleted within 30 days)</li>
+    </ul>
+    
+    <h3>9.3 Automatic Deletion</h3>
+    <ul>
+      <li><strong>Focus Rooms:</strong> Automatically deleted 10 minutes after the last participant leaves</li>
+      <li><strong>Chat Messages:</strong> Limited to 100 messages per room; oldest messages deleted first</li>
+      <li><strong>Guest Accounts:</strong> May be deleted after extended periods of inactivity</li>
+    </ul>
+
+    <h2 id="your-rights">10. Your Rights</h2>
+    
+    <p>Under the GDPR and German data protection law (BDSG), you have the following rights:</p>
+    
+    <h3>10.1 Right of Access (Art. 15 GDPR)</h3>
+    <p>You have the right to obtain confirmation of whether we process your personal data and, if so, access to that data along with information about how it is processed.</p>
+    
+    <h3>10.2 Right to Rectification (Art. 16 GDPR)</h3>
+    <p>You have the right to request correction of inaccurate personal data and completion of incomplete personal data. You can update most information directly in the App settings.</p>
+    
+    <h3>10.3 Right to Erasure (Art. 17 GDPR)</h3>
+    <p>You have the right to request deletion of your personal data. You can delete your account directly in the App (Profile → Settings → Delete Account), which will remove your data as described above.</p>
+    
+    <h3>10.4 Right to Restriction (Art. 18 GDPR)</h3>
+    <p>You have the right to request restriction of processing of your personal data in certain circumstances, such as when you contest the accuracy of the data.</p>
+    
+    <h3>10.5 Right to Data Portability (Art. 20 GDPR)</h3>
+    <p>You have the right to receive your personal data in a structured, commonly used, machine-readable format. Premium subscribers can export their focus data through the App.</p>
+    
+    <h3>10.6 Right to Object (Art. 21 GDPR)</h3>
+    <p>You have the right to object to processing of your personal data based on legitimate interests. If you object, we will no longer process your data unless we demonstrate compelling legitimate grounds.</p>
+    
+    <h3>10.7 Right to Withdraw Consent (Art. 7(3) GDPR)</h3>
+    <p>Where we rely on consent, you have the right to withdraw that consent at any time. Withdrawal does not affect the lawfulness of processing before the withdrawal.</p>
+    
+    <h3>10.8 Right to Lodge a Complaint</h3>
+    <p>You have the right to lodge a complaint with a supervisory authority. In Baden-Württemberg, Germany, the relevant authority is:</p>
+    
+    <div class="highlight-box">
+      <strong>Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg</strong><br>
+      Lautenschlagerstraße 20<br>
+      70173 Stuttgart, Germany<br>
+      Website: <a href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank">www.baden-wuerttemberg.datenschutz.de</a>
+    </div>
+    
+    <h3>10.9 Exercising Your Rights</h3>
+    <p>To exercise any of these rights, please contact us at <a href="mailto:elibyteofficial@gmail.com">elibyteofficial@gmail.com</a> with "Privacy Request" in the subject line. We will respond within 30 days. We may request verification of your identity before processing your request.</p>
+
+    <h2 id="security">11. Data Security</h2>
+    
+    <h3>11.1 Security Measures</h3>
+    <p>We implement appropriate technical and organizational measures to protect your personal data, including:</p>
+    
+    <h4>Technical Measures</h4>
+    <ul>
+      <li><strong>Encryption in Transit:</strong> All data transmitted between your device and our servers is encrypted using TLS/SSL</li>
+      <li><strong>Encryption at Rest:</strong> Data stored in Firebase is encrypted at rest</li>
+      <li><strong>Secure Authentication:</strong> We use OAuth 2.0 through Google and Apple Sign-In</li>
+      <li><strong>Password Hashing:</strong> Room passwords are hashed before storage</li>
+      <li><strong>Access Controls:</strong> Firebase Security Rules restrict data access to authorized users</li>
+    </ul>
+    
+    <h4>Organizational Measures</h4>
+    <ul>
+      <li>Limited access to personal data on a need-to-know basis</li>
+      <li>Regular security reviews and updates</li>
+      <li>Incident response procedures</li>
+    </ul>
+    
+    <h3>11.2 Content Moderation</h3>
+    <p>To maintain a safe environment, we implement:</p>
+    <ul>
+      <li>Automated profanity and spam filtering</li>
+      <li>Rate limiting on messages and actions</li>
+      <li>Input sanitization to prevent malicious content</li>
+      <li>Restrictions on sharing personal information in chats</li>
+    </ul>
+    
+    <h3>11.3 Your Responsibilities</h3>
+    <p>You can help protect your data by:</p>
+    <ul>
+      <li>Using strong, unique passwords for your Google or Apple account</li>
+      <li>Enabling two-factor authentication on your sign-in provider</li>
+      <li>Not sharing room passwords with untrusted individuals</li>
+      <li>Not sharing sensitive information in Focus Room chats</li>
+      <li>Keeping your device and operating system updated</li>
+    </ul>
+    
+    <h3>11.4 Security Incidents</h3>
+    <p>In the event of a data breach that poses a high risk to your rights and freedoms, we will:</p>
+    <ul>
+      <li>Notify the relevant supervisory authority within 72 hours</li>
+      <li>Notify affected users without undue delay</li>
+      <li>Take immediate steps to mitigate the impact</li>
+    </ul>
+
+    <h2 id="children">12. Children's Privacy</h2>
+    
+    <h3>12.1 Age Requirement</h3>
+    <p>Focus Together is intended for users aged 16 and older. We do not knowingly collect personal data from children under 16 years of age.</p>
+    
+    <h3>12.2 Parental Consent</h3>
+    <p>If you are between 16 and 18 years old, you should review this Privacy Policy with your parent or guardian to ensure they understand and agree to it.</p>
+    
+    <h3>12.3 Discovery of Child Data</h3>
+    <p>If we discover that we have collected personal data from a child under 16 without appropriate consent, we will take steps to delete that information as quickly as possible. If you believe we may have collected data from a child under 16, please contact us immediately.</p>
+
+    <h2 id="cookies">13. Cookies and Tracking</h2>
+    
+    <h3>13.1 Mobile App</h3>
+    <p>As a mobile application, Focus Together does not use traditional browser cookies. However, we use similar technologies:</p>
+    
+    <ul>
+      <li><strong>Local Storage:</strong> We store preferences and temporary data on your device</li>
+      <li><strong>Firebase Analytics:</strong> Collects anonymized usage data to help us understand how the App is used</li>
+      <li><strong>Device Identifiers:</strong> Firebase may use device identifiers for analytics purposes</li>
+    </ul>
+    
+    <h3>13.2 Website</h3>
+    <p>If you visit our website (focustogether.app), we may use:</p>
+    <ul>
+      <li><strong>Essential Cookies:</strong> Required for the website to function</li>
+      <li><strong>Analytics Cookies:</strong> To understand how visitors use our website</li>
+    </ul>
+    
+    <h3>13.3 Opting Out</h3>
+    <p>You can limit tracking by:</p>
+    <ul>
+      <li>Disabling analytics in your device settings (iOS: Settings → Privacy → Analytics; Android: Settings → Google → Ads)</li>
+      <li>Using the App's offline mode (limited functionality)</li>
+    </ul>
+
+    <h2 id="changes">14. Changes to This Policy</h2>
+    
+    <h3>14.1 Updates</h3>
+    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+    <ul>
+      <li>Posting the new Privacy Policy in the App and on our website</li>
+      <li>Updating the "Last Updated" date at the top of this policy</li>
+      <li>Sending a notification through the App for material changes</li>
+    </ul>
+    
+    <h3>14.2 Material Changes</h3>
+    <p>For material changes that affect how we use your personal data, we will provide at least 30 days' notice before the changes take effect. Material changes include:</p>
+    <ul>
+      <li>New categories of personal data collected</li>
+      <li>New purposes for processing data</li>
+      <li>New third-party data sharing</li>
+      <li>Significant changes to your rights</li>
+    </ul>
+    
+    <h3>14.3 Continued Use</h3>
+    <p>Your continued use of Focus Together after the effective date of any changes constitutes your acceptance of the revised Privacy Policy.</p>
+    
+    <h3>14.4 Previous Versions</h3>
+    <p>Previous versions of this Privacy Policy are available upon request.</p>
+
+    <h2 id="contact">15. Contact Us</h2>
+    
+    <h3>15.1 General Inquiries</h3>
+    <p>For general questions about this Privacy Policy or our data practices:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:elibyteofficial@gmail.com">elibyteofficial@gmail.com</a></li>
+      <li><strong>Website:</strong> <a href="https://focustogether.app">https://focustogether.app</a></li>
+    </ul>
+    
+    <h3>15.2 Privacy-Specific Requests</h3>
+    <p>For privacy-related requests (access, deletion, rectification, etc.), please email us with:</p>
+    <ul>
+      <li>Subject line: "Privacy Request"</li>
+      <li>The specific right you wish to exercise</li>
+      <li>Information to help us verify your identity (e.g., email associated with your account)</li>
+    </ul>
+    
+    <h3>15.3 Response Time</h3>
+    <p>We aim to respond to all privacy requests within 30 days. If we need more time (up to an additional 60 days for complex requests), we will inform you of the reason for the delay.</p>
+    
+    <h3>15.4 Complaints</h3>
+    <p>If you are not satisfied with our response to your privacy request, you have the right to lodge a complaint with your local data protection authority. For users in Baden-Württemberg, Germany, please see Section 10.8 above.</p>
+
+    <div class="footer">
+      <p><strong>Focus Together</strong><br>
+      Baden-Württemberg, Germany</p>
+      <p>This Privacy Policy is effective as of January 24, 2026.</p>
+      <p>© 2026 Focus Together. All rights reserved.</p>
+      <p style="margin-top: 20px;">
+        <a href="/terms.html">Terms and Conditions</a> · 
+        <a href="mailto:elibyteofficial@gmail.com">Contact Us</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
